@@ -2,56 +2,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  color: #535353;
 }
 
+// Paper
 body {
   width: 100%;
   height: 100%;
   background-attachment: fixed;
   background: url(../images/pattern.jpg) #c9ba93;
   background-repeat: repeat;
-}
-
-.paper {
-  background-color: #ffffee;
-  max-width: 50em;
-  margin: 2em auto;
-  border-radius: 2em;
-  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.7);
-}
-
-header {
-  border-bottom: solid rgb(196, 194, 194) 1px;
-  .header-content {
-    padding: 2em 2em 2em 1em;
-    margin: 0 0 0 4em;
-    border-left: solid rgb(196, 194, 194) 1px;
+  .paper {
+    background-color: #ffffee;
+    max-width: 50em;
+    margin: 2em auto;
+    border-radius: 2em;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.7);
   }
-}
-
-main {
-  min-height: 41em;
-  background: repeating-linear-gradient(
-    180deg,
-    #ffffee,
-    #ffffee 31px,
-    #c4c2c2 31px,
-    #c4c2c2 32px
-  );
-
-  .main-content {
-    padding: 2em;
-    margin: 0 0 0 4em;
-    border-left: solid rgb(196, 194, 194) 1px;
-    height: 100%;
+  header {
+    border-bottom: solid rgb(196, 194, 194) 1px;
+    .header-content {
+      padding: 2em 2em 2em 1em;
+      margin: 0 0 0 4em;
+      border-left: solid rgb(196, 194, 194) 1px;
+    }
+  }
+  main {
     min-height: 41em;
+    background: repeating-linear-gradient(
+      180deg,
+      #ffffee,
+      #ffffee 31px,
+      #c4c2c2 31px,
+      #c4c2c2 32px
+    );
+    .main-content {
+      padding: 2em;
+      margin: 0 0 0 4em;
+      border-left: solid rgb(196, 194, 194) 1px;
+      height: 100%;
+      min-height: 41em;
+    }
+  }
+  footer {
+    .footer-content {
+      padding: 2em 2em 2em 1em;
+      margin: 0 0 0 4em;
+      border-left: solid rgb(196, 194, 194) 1px;
+    }
   }
 }
 
-footer {
-  .footer-content {
-    padding: 2em 2em 2em 1em;
-    margin: 0 0 0 4em;
-    border-left: solid rgb(196, 194, 194) 1px;
+// Text style
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.333333em;
+}
+
+h1 {
+  line-height: 1em;
+}
+h2 {
+  line-height: 1.333333em;
+}
+
+// Menu
+.header-menu {
+  display: flex;
+  position: absolute;
+  top: 1em;
+  .menu {
+    height: 4em;
+    width: 4em;
+    background-color: crimson;
+  }
+  .menu-1 {
+    background: url(../images/post1.png);
+    background-size: cover;
+  }
+  .menu-2 {
+    background: url(../images/post2.png);
+    background-size: cover;
+  }
+  .menu-3 {
+    background: url(../images/post3.png);
+    background-size: cover;
+  }
+  .menu-4 {
+    background: url(../images/post4.png);
+    background-size: cover;
   }
 }
