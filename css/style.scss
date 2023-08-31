@@ -14,7 +14,7 @@ body {
   background: url(../images/pattern.jpg) #c9ba93;
   background-repeat: repeat;
   .paper {
-    background-color: #ffffee;
+    background-color: #ffffff;
     max-width: 50em;
     margin: 2em auto;
     border-radius: 2em;
@@ -32,8 +32,8 @@ body {
     min-height: 41em;
     background: repeating-linear-gradient(
       180deg,
-      #ffffee,
-      #ffffee 31px,
+      #ffffff,
+      #ffffff 31px,
       #c4c2c2 31px,
       #c4c2c2 32px
     );
@@ -139,8 +139,7 @@ h2 {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  .copyright {
-  }
+
   .eraser-wrapper {
     position: relative;
     .eraser {
@@ -169,6 +168,48 @@ main {
       height: 100%;
       left: -1.7em;
     }
+  }
+}
+
+// sketch Images
+.img-map {
+  width: 30em;
+  height: 30em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 31px,
+      rgba(196, 194, 192, 0.5) 31px,
+      rgba(196, 194, 192, 0.5) 32px
+    ),
+    url("https://picsum.photos/480/480");
+}
+
+.img-map {
+  width: 30em;
+  height: 30em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 31px,
+      rgba(196, 194, 192, 0.5) 31px,
+      rgba(196, 194, 192, 0.5) 32px
+    ),
+    url(../images/map.png);
+}
+.picture {
+  filter: grayscale(100%);
+  overflow: hidden;
+  &:after {
+    content: "";
+    background: inherit;
+    filter: grayscale(100%) invert(100%) blur(10px);
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
