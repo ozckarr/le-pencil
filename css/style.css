@@ -68,35 +68,59 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.header-content .logo {
-  height: 6em;
-  width: 6em;
+.header-content .logo-wrap {
+  position: relative;
+}
+.header-content .logo-wrap .logo {
+  position: absolute;
+  height: 8em;
+  width: 8em;
   background: url(../images/post5.png);
   background-size: cover;
+  top: -3em;
+  right: -2em;
+  transform: rotate(346deg);
 }
-.header-content .header-menu {
+.header-content .menu-wrap {
+  position: relative;
+}
+.header-content .menu-wrap .header-menu {
   display: flex;
   position: absolute;
-  top: 1em;
+  top: -3em;
+  right: 0em;
 }
-.header-content .header-menu .menu {
+.header-content .menu-wrap .header-menu .menu-1 {
+  background: url(../images/post1.png);
+}
+.header-content .menu-wrap .header-menu .menu-1-open {
+  background: url(../images/post1open.png);
+}
+.header-content .menu-wrap .header-menu .menu-2 {
+  background: url(../images/post2.png);
+}
+.header-content .menu-wrap .header-menu .menu-2-open {
+  background: url(../images/post2open.png);
+}
+.header-content .menu-wrap .header-menu .menu-3 {
+  background: url(../images/post3.png);
+}
+.header-content .menu-wrap .header-menu .menu-3-open {
+  background: url(../images/post3open.png);
+}
+.header-content .menu-wrap .header-menu .menu-4 {
+  background: url(../images/post4.png);
+}
+.header-content .menu-wrap .header-menu .menu-4-open {
+  background: url(../images/post4open.png);
+}
+.header-content .menu-wrap .header-menu .dropdown {
+  background: url(../images/dropdown.png);
+  display: none;
+}
+.header-content .menu-wrap .header-menu .menu {
   height: 6em;
   width: 6em;
-}
-.header-content .header-menu .menu-1 {
-  background: url(../images/post1.png);
-  background-size: cover;
-}
-.header-content .header-menu .menu-2 {
-  background: url(../images/post2.png);
-  background-size: cover;
-}
-.header-content .header-menu .menu-3 {
-  background: url(../images/post3.png);
-  background-size: cover;
-}
-.header-content .header-menu .menu-4 {
-  background: url(../images/post4.png);
   background-size: cover;
 }
 
@@ -131,4 +155,14 @@ main .spiral-wrapper .spiral {
   width: 3em;
   height: 100%;
   left: -1.7em;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .header-content .menu-wrap .header-menu .dropdown {
+    display: block;
+    right: -2em;
+  }
 }
