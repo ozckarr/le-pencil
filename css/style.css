@@ -33,7 +33,7 @@ body main {
   background: repeating-linear-gradient(180deg, #ffffee, #ffffee 31px, #c4c2c2 31px, #c4c2c2 32px);
 }
 body main .main-content {
-  padding: 2em;
+  padding: 2em 3em 2em 2em;
   margin: 0 0 0 4em;
   border-left: solid rgb(196, 194, 194) 1px;
   height: 100%;
@@ -64,29 +64,71 @@ h2 {
   line-height: 1.333333em;
 }
 
-.header-menu {
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.header-content .logo {
+  height: 6em;
+  width: 6em;
+  background: url(../images/post5.png);
+  background-size: cover;
+}
+.header-content .header-menu {
   display: flex;
   position: absolute;
   top: 1em;
 }
-.header-menu .menu {
-  height: 4em;
-  width: 4em;
-  background-color: crimson;
+.header-content .header-menu .menu {
+  height: 6em;
+  width: 6em;
 }
-.header-menu .menu-1 {
+.header-content .header-menu .menu-1 {
   background: url(../images/post1.png);
   background-size: cover;
 }
-.header-menu .menu-2 {
+.header-content .header-menu .menu-2 {
   background: url(../images/post2.png);
   background-size: cover;
 }
-.header-menu .menu-3 {
+.header-content .header-menu .menu-3 {
   background: url(../images/post3.png);
   background-size: cover;
 }
-.header-menu .menu-4 {
+.header-content .header-menu .menu-4 {
   background: url(../images/post4.png);
   background-size: cover;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content .eraser-wrapper {
+  position: relative;
+}
+.footer-content .eraser-wrapper .eraser {
+  height: 7em;
+  width: 7em;
+  background: url(../images/eraser.png);
+  background-size: contain;
+  position: absolute;
+  top: -6em;
+  left: -2em;
+}
+
+main {
+  display: flex;
+}
+main .spiral-wrapper {
+  background-color: aqua;
+  position: relative;
+}
+main .spiral-wrapper .spiral {
+  position: absolute;
+  background: url(../images/spiral.png);
+  background-size: contain;
+  width: 3em;
+  height: 100%;
+  left: -1.7em;
 }

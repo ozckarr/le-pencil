@@ -38,7 +38,7 @@ body {
       #c4c2c2 32px
     );
     .main-content {
-      padding: 2em;
+      padding: 2em 3em 2em 2em;
       margin: 0 0 0 4em;
       border-left: solid rgb(196, 194, 194) 1px;
       height: 100%;
@@ -72,30 +72,77 @@ h2 {
   line-height: 1.333333em;
 }
 
-// Menu
-.header-menu {
+// Header
+.header-content {
   display: flex;
-  position: absolute;
-  top: 1em;
-  .menu {
-    height: 4em;
-    width: 4em;
-    background-color: crimson;
-  }
-  .menu-1 {
-    background: url(../images/post1.png);
+  justify-content: space-between;
+
+  .logo {
+    height: 6em;
+    width: 6em;
+    background: url(../images/post5.png);
     background-size: cover;
   }
-  .menu-2 {
-    background: url(../images/post2.png);
-    background-size: cover;
+  .header-menu {
+    display: flex;
+    position: absolute;
+    top: 1em;
+    .menu {
+      height: 6em;
+      width: 6em;
+    }
+    .menu-1 {
+      background: url(../images/post1.png);
+      background-size: cover;
+    }
+    .menu-2 {
+      background: url(../images/post2.png);
+      background-size: cover;
+    }
+    .menu-3 {
+      background: url(../images/post3.png);
+      background-size: cover;
+    }
+    .menu-4 {
+      background: url(../images/post4.png);
+      background-size: cover;
+    }
   }
-  .menu-3 {
-    background: url(../images/post3.png);
-    background-size: cover;
+}
+
+// Footer
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  .copyright {
   }
-  .menu-4 {
-    background: url(../images/post4.png);
-    background-size: cover;
+  .eraser-wrapper {
+    position: relative;
+    .eraser {
+      height: 7em;
+      width: 7em;
+      background: url(../images/eraser.png);
+      background-size: contain;
+      position: absolute;
+      top: -6em;
+      left: -2em;
+    }
+  }
+}
+
+// Spiral
+main {
+  display: flex;
+  .spiral-wrapper {
+    background-color: aqua;
+    position: relative;
+    .spiral {
+      position: absolute;
+      background: url(../images/spiral.png);
+      background-size: contain;
+      width: 3em;
+      height: 100%;
+      left: -1.7em;
+    }
   }
 }
