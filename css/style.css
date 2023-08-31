@@ -9,6 +9,7 @@
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   background-attachment: fixed;
   background: url(../images/pattern.jpg) #c9ba93;
   background-repeat: repeat;
@@ -214,6 +215,52 @@ main .spiral-wrapper .spiral {
   right: 0;
 }
 
+.pen-title {
+  display: flex;
+  justify-content: space-between;
+}
+.pen-title .pen-title-buy {
+  border: #535353 solid 0.15em;
+  padding: 0.3em;
+  border-radius: 5em;
+  height: 4em;
+  height: 3.2em;
+}
+.pen-title .pen-title-buy img {
+  height: 2em;
+}
+
+.pen-card {
+  margin-bottom: 4em;
+}
+.pen-card .pencil-wrap {
+  height: 2em;
+  width: 100%;
+  position: absolute;
+}
+.pen-card .pencil-wrap .pencil {
+  z-index: 1;
+  left: 6em;
+  width: 40em;
+  height: 2em;
+  position: relative;
+}
+.pen-card .pencil-wrap .pencil-1 {
+  background-image: url(../images/pencils/pen1.png);
+}
+.pen-card .pencil-wrap .pencil-2 {
+  background-image: url(../images/pencils/pen2.png);
+}
+.pen-card .pencil-wrap .pencil-3 {
+  background-image: url(../images/pencils/pen3.png);
+}
+.pen-card .pencil-wrap .pencil-4 {
+  background-image: url(../images/pencils/pen4.png);
+}
+.pen-card .pencil-wrap .pencil-5 {
+  background-image: url(../images/pencils/pen5.png);
+}
+
 @media only screen and (max-width: 600px) {
   .menu {
     display: none;
@@ -221,5 +268,9 @@ main .spiral-wrapper .spiral {
   .header-content .menu-wrap .header-menu .dropdown {
     display: block;
     right: -2em;
+  }
+  .pencil-wrap .pencil {
+    z-index: 1;
+    left: -10em;
   }
 }
