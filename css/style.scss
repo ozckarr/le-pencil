@@ -21,11 +21,11 @@ body {
     box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.7);
   }
   header {
-    border-bottom: solid rgb(196, 194, 194) 1px;
+    border-bottom: solid rgb(196, 194, 194) 0.06em;
     .header-content {
       padding: 2em 2em 2em 1em;
       margin: 0 0 0 4em;
-      border-left: solid rgb(196, 194, 194) 1px;
+      border-left: solid rgb(196, 194, 194) 0.06em;
     }
   }
   main {
@@ -33,14 +33,14 @@ body {
     background: repeating-linear-gradient(
       180deg,
       #ffffff,
-      #ffffff 31px,
-      #c4c2c2 31px,
-      #c4c2c2 32px
+      #ffffff 1.9375em,
+      #c4c2c2 1.9375em,
+      #c4c2c2 2em
     );
     .main-content {
       padding: 2em 3em 2em 2em;
       margin: 0 0 0 4em;
-      border-left: solid rgb(196, 194, 194) 1px;
+      border-left: solid rgb(196, 194, 194) 0.06em;
       height: 100%;
       min-height: 41em;
     }
@@ -49,7 +49,7 @@ body {
     .footer-content {
       padding: 2em 2em 2em 1em;
       margin: 0 0 0 4em;
-      border-left: solid rgb(196, 194, 194) 1px;
+      border-left: solid rgb(196, 194, 194) 0.06em;
     }
   }
 }
@@ -178,24 +178,76 @@ main {
   background-image: repeating-linear-gradient(
       180deg,
       rgba(255, 255, 238, 0.5),
-      rgba(255, 255, 238, 0.5) 31px,
-      rgba(196, 194, 192, 0.5) 31px,
-      rgba(196, 194, 192, 0.5) 32px
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
     ),
     url("https://picsum.photos/480/480");
 }
-
+.img-people {
+  max-width: 40em;
+  height: 26em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
+    ),
+    url(../images/people.jpg);
+  background-size: cover;
+}
+.img-pencils {
+  max-width: 40em;
+  height: 14em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
+    ),
+    url(../images/pencils.jpg);
+  background-size: cover;
+}
+.img-trees {
+  max-width: 40em;
+  height: 22em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
+    ),
+    url(../images/trees.jpg);
+  background-size: cover;
+}
 .img-map {
-  width: 30em;
+  max-width: 30em;
   height: 30em;
   background-image: repeating-linear-gradient(
       180deg,
       rgba(255, 255, 238, 0.5),
-      rgba(255, 255, 238, 0.5) 31px,
-      rgba(196, 194, 192, 0.5) 31px,
-      rgba(196, 194, 192, 0.5) 32px
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
     ),
     url(../images/map.png);
+  background-size: cover;
+}
+.img-wares {
+  max-width: 40em em;
+  height: 20em;
+  background-image: repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 238, 0.5),
+      rgba(255, 255, 238, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 1.9375em,
+      rgba(196, 194, 192, 0.5) 2rem
+    ),
+    url(../images/wares.jpg);
+  background-size: cover;
 }
 .picture {
   filter: grayscale(100%);
@@ -203,7 +255,7 @@ main {
   &:after {
     content: "";
     background: inherit;
-    filter: grayscale(100%) invert(100%) blur(10px);
+    filter: grayscale(100%) invert(100%) blur(0.625em);
     mix-blend-mode: color-dodge;
     position: absolute;
     top: 0;
